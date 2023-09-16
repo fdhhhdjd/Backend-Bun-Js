@@ -1,15 +1,16 @@
-# Elysia with Bun runtime
-
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+# Run source of me 😃
+## Clone source code
 ```bash
-bun create elysia ./Backend-Bun-Js
+git clone <ssh or https >
+```
+
+## Go inside folder
+```bash
+cd Backend-Bun-Js
 ```
 
 ## Development
-To start the development server run:
+To start the development server run the following:
 ```bash
 bun run dev
 ```
-
-Open http://localhost:3000/ with your browser to see the result.
