@@ -18,9 +18,13 @@
 git clone <ssh or https >
 ```
 
-## Go inside folder
+## Go inside folder and install node_modules
 ```bash
 cd Backend-Bun-Js
+```
+
+```bash
+bun install
 ```
 
 ## Development
