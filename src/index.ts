@@ -31,6 +31,6 @@ app.use(
 // Todo: Run Port
 app.listen(port, () => {
   console.info(
-    `🦊 Elysia is running att ${app.server?.hostname}:${app.server?.port}`,
+    `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`,
   );
 });
