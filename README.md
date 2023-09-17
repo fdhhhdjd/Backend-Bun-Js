@@ -27,10 +27,18 @@ cd Backend-Bun-Js
 bun install
 ```
 
+```bash
+make install
+```
+
 ## Development
 To start the development server run the following:
 ```bash
 bun run dev
+```
+
+```bash
+make dev
 ```
 
 ## Tài Khoản Donate li Cf để có động lực code cho anh em tham khảo 😄😄.
