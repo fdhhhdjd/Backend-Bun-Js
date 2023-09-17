@@ -6,6 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.ts",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix && echo \"Oh my good prefetch 😆\"",
+    "prepare": "husky install",
     "pre-commit": "echo \"[Husky] pre-commit\""
   },
   "husky": {
