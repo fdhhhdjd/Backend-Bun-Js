@@ -1,16 +1,40 @@
 {
   "name": "Backend-Bun-Js",
   "version": "1.0.50",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix && echo \"Oh my good prefetch 😆\"",
+    "pre-commit": "echo \"[Husky] pre-commit\""
   },
   "dependencies": {
+    "@elysiajs/cors": "^0.6.0",
+    "@elysiajs/swagger": "^0.6.2",
     "elysia": "latest",
-    "helmet": "^7.0.0"
+    "elysia-helmet": "^1.0.1"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "bun-types": "latest",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "module": "src/index.js"
 }

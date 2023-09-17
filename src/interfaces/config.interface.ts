@@ -1,22 +1,22 @@
 export interface DevInterface {
-    app: {
-        port: Number | String
-    }
+  app: {
+    port: number | string;
+  };
 }
 
 export interface ProInterface {
-    app: {
-        port: Number | String
-    }
+  app: {
+    port: number | string;
+  };
 }
 
 export interface EnvInterface {
-    app: {
-        port: Number | String 
-    }
+  app: {
+    port: number | string;
+  };
 }
 
 export interface ConfigInterface {
-    DEV: DevInterface,
-    PRO: ProInterface
+  DEV: DevInterface;
+  PRO: ProInterface;
 }
